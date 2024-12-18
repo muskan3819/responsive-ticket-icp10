@@ -6,68 +6,102 @@
     <title>College Event Ticket</title>
     <style>
         .ticket {
-      height: 800px;
+        
+      height: 850px;
       width: 800px;
         display: flex;
-        padding: 50px;
+        padding: 60px;
     }
     .user{
         width: 800px;
-        height: 280px;
-        margin: 50px auto;
-        background-color: #f0f0f0;
-        border: 2px solid #090909;
+        height: 300px;
+        background-color: #f8e89f;
+        border: 2px solid #0c0c0c;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border-style: double;
-        border-right-style: dashed;
-        padding: 10px; 
-        text-align: center;
+        border-right-style: none;
+        padding: 5px;
 
         
      }
+     .t{
+        font-family: 'Courier New', Courier, monospace;
+     }
       .event{
-        width: 450px;
-        height: 280px;
-        margin: 50px auto;
-        background-color: #f0f0f0;
+        width: 500px;
+        height: 300px;
+        background-color:  #f8e89f;
         border: 2px solid #090909;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border-style: double;
         border-left-style: dashed;
-        padding: 10px;   
+        padding: 5px;
+        
         
 
       }
-    
-   
-    
 
-    .details {
-        margin-top: 20px;
-    }
-    
-    .footer {
-        margin-top: 20px;
-        text-align: center;
-    }
-    
-    @media only screen and (max-width: 768px) {
+      .t1{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 15px;     
+   
+      }
+
+      @media screen and (min-width: 600px) and (max-width: 768px) {
         .ticket {
-            width: 100%;
-            height: auto;
+          background-color: aquamarine;
+          flex-direction:column ;
+          align-items: center;
+          height: auto;
+          width: 100%;
         }
-    }
+        .user{
+            width: 500px;
+            border-right-style: double;
+            border-bottom-style: none;
+        }
+        .event{
+            width: 500px;
+            border-left-style: double;
+            border-top-style: dashed;
+        }
+      }
+
 </style>
 
 </head>
 <body>
     <div class="ticket">
 <div class="user">
+    <u class="t">ticket no:-22251</u>
    <center> <img src="https://www.rkmmanr.org/web-assets/img/leftside-logo.png" height="60px" ></center>
-   <b class="bold">Radhabai Kale Mahila mahavidylaya </b>
+   <center><b class="bold">Radhabai Kale Mahila mahavidylaya </b></center>
+   <p>Date: 26th JAN 2025</p>
+   <ul>
+  <li> <p>Ticket Number:-22251</p></li>
+ <li> <p>Seat Number:- 101</p></li>
+  <li> <p>Price:-  ₹50.00</p></li>
+</ul>
+<p>College location:-A.nager,Tarkpur bus-stand</p>
+<p>Contact: 555-555-5555 | RKMM@gamil.com</p>
+
 </div>
 
-<div class="event">part  2</div>
+<div class="event">  
+     <u class="t1">ticket no:-22251</u>
+     <br>
+     <br>
+    <center> <img src="https://www.rkmmanr.org/web-assets/img/leftside-logo.png" height="60px" ></center>
+    <center><b class="bold">Radhabai Kale Mahila mahavidylaya </b></center>
+    <p>Date: 26th JAN 2025</p>
+    <ul>
+        <li> <p>Ticket Number:-22251</p></li>
+       <li> <p>Seat Number:- 101</p></li>
+      </ul>
+      <p>College location:-A.nager,Tarkpur bus-stand</p>
+      <p>Contact: 555-555-5555 | RKMM@gamil.com</p>
+      
+</div>
      
 </body>
 </html>
