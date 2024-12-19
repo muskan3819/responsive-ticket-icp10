@@ -46,8 +46,8 @@
         font-size: 15px;     
    
       }
-
-      @media screen and (min-width: 600px) and (max-width: 768px) {
+           /* for tablet */
+      @media screen and (min-width: 768px) and (max-width: 992px) {
         .ticket {
           background-color: aquamarine;
           flex-direction:column ;
@@ -68,7 +68,71 @@
             border-top-style: dashed;
         }
       }
-
+      /* for moblie */
+      @media screen and (min-width: 100px) and (max-width: 768px) {
+        .ticket {
+          background-color: rgb(247, 186, 243);
+          flex-direction:column ;
+          align-items: center;
+          height: auto;
+          width: 100%;
+        }
+        .user{
+            width: 290px;
+            height: 290px;
+            border-right-style: double;
+            border-bottom-style: none;
+        }
+        .event{
+            width: 290px;
+            height: 310px;
+            border-left-style: double;
+            border-top-style: dashed;
+        }
+      }
+      /*for laptop */
+      @media screen and (min-width: 992px) and (max-width: 1200px) {
+        .ticket {
+          background-color: rgb(219, 235, 117);
+          flex-direction:column ;
+          align-items: center;
+          height: auto;
+          width: 100%;
+        }
+        .user{
+            width: 500px;
+            height: 300px;
+            border-right-style: double;
+            border-bottom-style: none;
+        }
+        .event{
+            width: 500px;
+            height: 300px;
+            border-left-style: double;
+            border-top-style: dashed;
+        }
+      }
+  /*for tv */
+  @media screen and (min-width:1200px) and (max-width: 3000px) {
+        .ticket {
+          background-color: rgb(134, 133, 228);
+          flex-direction:row;
+          align-items: center;
+          height: auto;
+          width: 100%;
+          
+        }
+        .user{
+            width: 500px;
+            height: 350px;
+          
+        }
+        .event{
+            width: 500px;
+            height: 350px;
+           
+        }
+      }
 </style>
 
 </head>
